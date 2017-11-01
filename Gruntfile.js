@@ -14,11 +14,11 @@ module.exports = function (grunt) {
         },
         uglify: {
             options: {
-                banner: '/**\n * Module: <%= pkg.name %>\n * Props: <%= pkg.props %>\n */\n'
+                banner: '/**\n * <%= pkg.name %>\n * @version <%= pkg.version %>\n * @author <%= pkg.author %>\n*/'
             },
             build: {
                 src: 'src/event-manager.js',
-                dest: 'build/event-manager.min.js'
+                dest: 'dist/event-manager.min.js'
             }
         },
         qunit: {
