@@ -14,7 +14,7 @@ module.exports = function (grunt) {
         },
         uglify: {
             options: {
-                banner: '/**\n * <%= pkg.name %>\n * @version <%= pkg.version %>\n * @author <%= pkg.author %>\n*/'
+                banner: '/**\n * <%= pkg.name %>\n * @version <%= pkg.version %>\n * @author <%= pkg.author %>\n */'
             },
             build: {
                 src: 'src/event-manager.js',
